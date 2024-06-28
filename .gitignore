@@ -1,0 +1,4 @@
+__pycache__/
+migrations/
+myVenv/
+db.sqlite3
