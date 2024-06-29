@@ -49,7 +49,7 @@ from rest_framework.permissions import IsAuthenticated
 class CreateItem(APIView):
 
     authentication_classes = [JWTAuthentication]
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
     def post(self, request):
         serializer = ItemSerializer(data=request.data)

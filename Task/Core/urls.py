@@ -4,11 +4,6 @@ from .views import Register, UserListView, Login , CreateItem, ItemDetail, ItemL
 
 
 urlpatterns = [
-    # path("api/token/", TokenObtainPairView.as_view(), name='login'),
-    # path("api/token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
-    # # path("api/user/", UserApi.as_view(), name="user"),
-    # path("api/register/", Signup.as_view(), name="register"),
-    # path("api/login/", Login.as_view(), name="login"),
     path("register/", Register.as_view(), name="register_route"),
     path("Login/", Login.as_view(), name="register_route"),
     path('users/', UserListView.as_view(), name='user-list'),
